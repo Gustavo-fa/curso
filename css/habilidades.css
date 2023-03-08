@@ -1,0 +1,47 @@
+.contenedor_habilidades{
+    display: flex;
+    background-color: #c9cccc;
+}
+.columna{
+    float: left;
+    width: 50%;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+#habilidades .container{
+    text-align: center;
+    padding: 0px 12px;
+}
+
+.columna h1{
+    display: flex;
+    text-justify: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.progreso{
+    height: 35px;
+    width: 100%;
+    border: 1px solid #428bca;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    margin-bottom: 15px;
+}
+.barra-progreso {
+    height: 100%;
+    background: #428bca;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+.barra-progreso-texto {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #cce7f5;
+}

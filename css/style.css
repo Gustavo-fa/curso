@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-decoration-line: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: rgb(207, 207, 207);
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logotexto{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: rgb(63, 63, 63);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+img{
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+.imagen{
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))   
+    ,url("../image/cara_6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px;
+    
+}
+#hero h1{
+    font-size: 3.5em;
+    margin-top: 200px;
+}
+#icon{
+    margin-top: 20px;
+    padding: 5px 5px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+.contenedor_perfil{
+    display: flex;
+    background-color: beige;
+}
+.clase_perfil{
+    float: left;
+    width: 30%;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#perfil .texto_perfil{
+    width: 70%;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* ---------------------------------------------------------------------- */
+.contenedor_experiencia{
+    display: flex;
+    background-color: aquamarine;
+
+}
+#experiencia .texto_experiencia{
+    width: 60%;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.clase_experiencia{
+    float: left;
+    width: 40%;
+    padding: 200px 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+
+.contenedor_habilidades{
+    display: flex;
+    background-color: #c9cccc;
+}
+.columna{
+    float: left;
+    width: 50%;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+#habilidades .container{
+    text-align: center;
+    padding: 0px 12px;
+}
+
+.columna h1{
+    display: flex;
+    text-justify: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.progreso{
+    height: 35px;
+    width: 100%;
+    border: 1px solid #428bca;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    margin-bottom: 15px;
+}
+.barra-progreso {
+    height: 100%;
+    background: #428bca;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+.barra-progreso-texto {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #cce7f5;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+.pie{
+    text-align: center;
+}
+
+@media (max-width: 720px){
+    .checkbtn{
+        display: block;
+        
+    }
+    #hero h1{
+        font-size: 1.5em;
+        margin-top: 200px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(31, 30, 30);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+    }
+    #check:checked ~ #hero{
+        display: none;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .columna{
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        
+    }
+    
+    
+}
